@@ -1,0 +1,44 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Micro_IN"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Name="ClientWindow" x:Class="Micro_IN.ClientForm"
+        mc:Ignorable="d"
+        Title="Clients" Height="269.333" Width="800" ResizeMode="NoResize" Icon="Images/Icons/magnifier-medium-left-icon.png" Topmost="True" WindowStartupLocation="CenterScreen" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="152*"/>
+            <ColumnDefinition Width="245*"/>
+        </Grid.ColumnDefinitions>
+        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="20,36,0,0" FontSize="16" FontFamily="Century Gothic" Height="10"/>
+        <Label x:Name="NameLabel" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="159,36,0,0" FontSize="16" FontFamily="Century Gothic" FontWeight="Bold" Height="30" Width="145"/>
+        <ComboBox x:Name="devicesCombobox" Grid.Column="1" HorizontalAlignment="Left" Margin="119,13,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="DevicesCombobox_SelectionChanged" Height="28"/>
+        <Label Content="Συσκευες" Grid.Column="1" HorizontalAlignment="Left" Margin="26,15,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Century Gothic" Height="30" Width="79"/>
+        <Label Content="Ονομα" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,39,0,0" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold" Height="27" Width="56"/>
+        <Label Content="Τηλεφωνο" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,98,0,0" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold" Height="27" Width="78"/>
+        <Label Content="Ημ. Εισαγωγής" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,128,0,0" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold" Height="27" Width="110"/>
+        <Label Content="Επίθετο" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,68,0,0" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold" Height="27" Width="60"/>
+        <Label x:Name="SirnameLabel" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="159,66,0,0" FontSize="16" FontFamily="Century Gothic" FontWeight="Bold" Height="30" Width="145"/>
+        <Label x:Name="TelephoneLabel" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="159,96,0,0" FontSize="16" FontFamily="Century Gothic" FontWeight="Bold" Height="30" Width="145"/>
+        <Label x:Name="DateLabel" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="159,126,0,0" FontSize="16" FontFamily="Century Gothic" FontWeight="Bold" Height="30" Width="145"/>
+        <Label Content="ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,19,0,0" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold" Height="27" Width="24"/>
+        <Label x:Name="IDLabel" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="159,15,0,0" FontSize="16" FontFamily="Century Gothic" FontWeight="Bold" Height="30" Width="145"/>
+        <Button x:Name="AddDeviceButton" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="186,119,0,0" Height="53" Click="AddDeviceButton_Click" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Icons-Users/Crystal_Project_Db_add.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="BrandTextbox" TextWrapping="Wrap" Text="Brand" Grid.Column="1" Margin="22,98,348,105" FontFamily="Century Gh"/>
+        <TextBox x:Name="ModelTextBox" TextWrapping="Wrap" Text="Model" Grid.Column="1" Margin="22,140,348,68" FontFamily="Century Gothic"/>
+        <TextBox x:Name="CommentsTextbox" TextWrapping="Wrap" Text="Comments" Grid.Column="1" Margin="22,177,251,29" FontFamily="Century Gothic"/>
+        <Label Content="CopyRight 2019 Dimitris Tsartsalis" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,204,0,0"/>
+        <TextBlock x:Name="CommentsTextblock" Grid.Column="1" HorizontalAlignment="Left" Margin="289,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="198" Width="178">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+
+    </Grid>
+</Window>

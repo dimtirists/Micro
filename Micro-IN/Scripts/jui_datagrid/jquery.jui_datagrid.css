@@ -1,0 +1,183 @@
+/*
+DO NOT CHANGE this file, as it will be overwritten in next update.
+Write your own classes in other css file.
+*/
+
+/* TABLE CSS USING JQUERY UI
+http://stackoverflow.com/questions/2613632/jquery-ui-themes-and-html-tables
+http://www.ke-cai.net/2010/01/theme-your-table-with-jquery-ui.html
+http://mindvisionco.blogspot.gr/2010/12/easy-table-beautifier-by-jquery-ui-css.html
+*/
+
+/* jQuery UI classes modifications ------------------------------------------ */
+.ui-state-default {
+    font-weight: normal !important;
+}
+
+.ui-state-hover {
+    font-weight: inherit !important;
+}
+
+/* plugin container --------------------------------------------------------- */
+.grid_container {
+    width: 600px;
+    padding: 5px;
+    background: none;
+}
+
+/* grid caption ------------------------------------------------------------- */
+.grid_caption {
+    padding: 2px 4px;
+    margin: 0;
+}
+
+/* grid headers ------------------------------------------------------------- */
+.grid_header {
+    padding: 0;
+    margin: 0;
+    border: none !important;
+}
+
+.grid_header_table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 -1px 0;
+    border: none;
+}
+
+.grid_th_common {
+    padding: 2px 4px;
+}
+
+.grid_th_row_number {
+    text-align: left;
+    width: 1%;
+}
+
+
+/* UTILITY CLASS - DO NOT EDIT */
+.shrink {
+    width: 1px;
+}
+
+/* grid data ---------------------------------------------------------------- */
+.grid_data {
+    padding: 0;
+    margin: 0 0 5px 0;
+    border: none;
+}
+
+.grid_data_table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+
+.grid_td_common {
+    padding: 2px 4px;
+}
+
+.grid_td_row_number {
+    text-align: left;
+    width: 1%;
+}
+
+/* grid toolbar ------------------------------------------------------------- */
+.grid_tools {
+    font-size: 11px !important;
+    text-align: center;
+    margin: 5px 0;
+    padding: 2px;
+}
+
+.tbBtnContainer {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.dropdown_select_menu {
+    position: absolute;
+    width: 150px !important;
+    margin-top: 3px !important;
+    z-index: 9999 !important;
+}
+
+.dropdown_select_menu li {
+    text-align: left;
+}
+
+/*.dropdown_select_menu li a {
+    color: inherit !important;
+}*/
+
+.dropdown_select_launcher {
+    padding: 0;
+}
+
+/* grid pagination ---------------------------------------------------------- */
+.grid_pagination {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+/* sortable ----------------------------------------------------------------- */
+.grid_sortable_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid_sortable_list_li {
+    margin: 0 3px 3px 3px;
+    padding: 7px 8px 7px 20px;
+    height: 16px;
+}
+
+.grid_sortable_list_li_icon {
+    position: absolute;
+    margin-left: -1.3em;
+}
+
+/* preferences dialog ------------------------------------------------------- */
+.dlg_pref {
+    font-size: .9em !important;
+}
+
+.dlg_pref_button {
+    font-size: .9em !important;
+}
+
+/* sorting dialog ----------------------------------------------------------- */
+.dlg_sort {
+    font-size: .9em !important;
+    padding: 7px !important;
+}
+
+.dlg_sort_button {
+    font-size: .9em !important;
+}
+
+/* filters dialog ----------------------------------------------------------- */
+.dlg_filters {
+    font-size: .9em !important;
+}
+
+.dlg_filters_button {
+    font-size: .9em !important;
+}
+
+/* no records found div ----------------------------------------------------- */
+.no_records_found {
+    text-align: center;
+    padding: 20px;
+}
+
+/* common list -------------------------------------------------------------- */
+.grid_common_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------------------------------------------- */

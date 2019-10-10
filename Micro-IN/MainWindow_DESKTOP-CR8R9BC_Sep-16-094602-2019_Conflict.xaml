@@ -1,0 +1,23 @@
+﻿<Window x:Name="MainWIN" x:Class="Micro_IN.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Micro_IN"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="481.396" Width="823.547">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="237*"/>
+            <ColumnDefinition Width="441*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ConnectButton" Content="Connect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="12,401,0,0" Click="ConnectButton_Click"/>
+        <Label x:Name="ConnectedLabel" Content="Not Connected" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="330.5,395,0,0" Grid.Column="2"/>
+        <Label x:Name="UserConnectedLabel" Content="No User" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="240.5,395,0,0" Grid.Column="2"/>
+        <PasswordBox Name="UsersPassword" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,399,0,0" Width="100" Height="23" Grid.Column="1"/>
+        <TextBox x:Name="UsernameCredentials" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Margin="92,399,0,0" Grid.ColumnSpan="2"/>
+
+
+    </Grid>
+</Window>

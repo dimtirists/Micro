@@ -1,0 +1,2 @@
+
+SELECT Micro.Users.Username, Micro.Users.Password FROM Micro.Users WHERE Micro.Users.Rank = 1; 
