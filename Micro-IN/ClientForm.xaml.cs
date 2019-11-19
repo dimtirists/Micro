@@ -103,25 +103,7 @@ namespace Micro_IN
 
         private void DevicesCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            using (conn)
-            {
-                
-                conn.Open();
-                MySqlCommand NewCommand = new MySqlCommand("SELECT Micro.Devices.Type FROM Micro.Devices WHERE Micro.Devices.IdClients ='" + IDLabel.Content + "'", conn);
-                MySqlDataReader dr = NewCommand.ExecuteReader();
-
-                DataTable devicesTable = new DataTable();
-                devicesTable.Load(dr);
-
-                foreach (DataRow row in devicesTable.Rows)
-                {
-
-                    CommentsTextblock.Text = row["Type"].ToString();
-                }
-                conn.Close();
-
-                devicesTable.Dispose();
-            }
+           
         }
 
         private void AddDeviceButton_Click(object sender, RoutedEventArgs e)
